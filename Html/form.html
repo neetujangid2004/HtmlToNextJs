@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            background-color: #414141;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>My First Form in Html</h1>
+    <form action="url" method="get" accept-charset="UTF-16" autocomplete="off" enctype="text/plain">
+        <label for="fname">First Name</label> <br>
+        <input type="text" placeholder="first name" name="" id="fname">
+        <br> <br>
+
+        <label for="lname">Last Name</label> <br>
+        <input type="text" placeholder="last name" name="" value="khati" id="lname">
+        <br><br>
+
+        <label for="week">Week</label> <br>
+        <input type="week" name="" placeholder="week" id="week">
+        <br><br>
+
+        <select name="editors" id="" multiple>
+            <option value="Vs code">Vs Code</option>
+            <option value="Sublime">Sublime</option>
+            <option value="Neetu">Neetu</option>
+            <option value="Jangid">Jangid</option>
+            <option value="Khati">Khati</option>
+        </select>
+        <br><br>
+
+        <input list="editors" name="editor">
+        <datalist id="editors">
+            <option value="Neetu">Neetu</option>
+            <option value="Jangid">Jangid</option>
+            <option value="Khati">Khati</option>
+        </datalist>
+        <br><br>
+
+        <input type="hidden" name="">
+
+        <input type="reset" value="Reset">
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
