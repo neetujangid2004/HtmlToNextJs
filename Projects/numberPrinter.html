@@ -48,6 +48,12 @@
             box-shadow: 0px 3px 15px rgba(255, 255, 255, 0.4);
             cursor: pointer;
         }
+        h3 {
+            color: white;
+            padding: 0%;
+            margin: 5px;
+            display: flex;
+        }
     </style>
 </head>
 <body>
@@ -62,9 +68,8 @@
             let x = document.getElementById("inputBox").value;
             let num = Number(x);
             for(i = 1;i <= num; i++){
-                window.alert(i);
+                document.getElementById("printNumber").innerHTML += i + "<br>";
             }
-            document.getElementById("printNumber").innerHTML = x;
         }
     </script>
 </body>
