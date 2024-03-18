@@ -54,6 +54,22 @@
             margin: 5px;
             display: flex;
         }
+        .scroll {
+            border: 0px;
+            padding: 4px;
+            margin: auto;
+            width: 20%;
+            height: 45%;
+            border-radius: 0px;
+            background: transparent;
+            box-shadow: 0px 0px 0px rgba(238, 57, 163, 0.5);
+            overflow-x: hidden;
+            overflow-y: auto;
+            text-align: justify;  
+        }
+        .scroll::-webkit-scrollbar {
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -61,7 +77,7 @@
         <h1>Print 'N' Numbers </h1>
         <input id="inputBox" type="text" placeholder="Enter value of N">
         <button class="button" onclick="print()">Print</button>
-        <h3 id="printNumber"></h3>
+        <div class="scroll"><h3 id="printNumber"></h3></div>
     </div>
     <script>
         function print() {
