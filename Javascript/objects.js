@@ -99,6 +99,7 @@ console.log(obj4);
 const obj5 = {...obj1, ...obj2};
 console.log(obj5);
 
+console.log("--------------------------");
 const arr = [
     {
         id: 1,
@@ -117,3 +118,36 @@ arr[1].id;
 console.log(arr[1].id);
 
 console.log(userName);
+console.log(Object.keys(userName));
+console.log(Object.values(userName));
+console.log(Object.entries(userName));
+console.log(userName.hasOwnProperty('isLoggedIn'));
+
+console.log("-----------------------------");
+const course = {
+    courseName: "Chaman Prash",
+    price: "999",
+    courseInstructor: "Komal"
+}
+console.log(course.courseInstructor);
+
+const {courseInstructor} = course;
+console.log(courseInstructor);
+
+const {courseInstructor: instructor} = course;
+console.log(instructor);
+
+// const navbar = {{company}} => {
+// }
+// navbar(company = "Nishuji");
+
+// {        jession
+//     "name": "Neetu",
+//     "courseName": "Js hindi",
+//     "price": "free"
+// }
+// [
+//     {},
+//     {},
+//     {}
+// ]
