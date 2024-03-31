@@ -12,3 +12,18 @@ body {
     background-color: rgb(163, 195, 196);
     color: #da21c1;
 }
+#idOne {
+    color: green;
+}
+.classOne {
+    color: #ac5319;
+}
+#box {
+    background-color: rgb(39, 164, 206);
+}
+.heading {
+    color: red;
+}
+.stylesheet {
+    background-color: lightgreen;
+}
