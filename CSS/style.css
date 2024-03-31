@@ -1,0 +1,14 @@
+* {
+    color: #611357;
+}
+h1 {
+    color: blue;
+}
+button {
+    color: brown;
+    background-color: lightblue;
+}
+body {
+    background-color: rgb(163, 195, 196);
+    color: #da21c1;
+}

@@ -30,3 +30,30 @@ function loginUser(userName = "Neetu"){
 console.log(loginUser("Yogesh"));
 console.log(loginUser(""));
 console.log(loginUser());       // undefined
+
+console.log("-------------------------");
+function calculateCardPrice(val1, val2, ...num1){       // rest
+    return num1;
+}
+console.log(calculateCardPrice(200, 300, 400, 500));
+
+const user = {
+    userName: "Neetu",
+    price: 199
+}
+function handleObject(anyObject){
+    console.log(`User name is ${anyObject.userName} and price is ${anyObject.price}`);
+}
+handleObject(user);
+handleObject({
+    userName: "Prakash",
+    price: 133
+})
+
+console.log("----------------------------");
+const myNewArray = [200, 400, 100, 600];
+function returnSecondValue(getArray){
+    return getArray[1];
+}
+console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([20, 30, 40, 50]));
