@@ -79,14 +79,14 @@
         <button class="button" onclick="print()">Print</button>
         <div class="scroll"><h3 id="printNumber"></h3></div>
     </div>
-    <script>
-        function print() {
-            let x = document.getElementById("inputBox").value;
-            let num = Number(x);
-            for(i = 1;i <= num; i++){
-                document.getElementById("printNumber").innerHTML += i + "<br>";
-            }
-        }
-    </script>
 </body>
+<script>
+    function print() {
+        let x = document.getElementById("inputBox").value;
+        let num = Number(x);
+        for(i = 1;i <= num; i++){
+            document.getElementById("printNumber").innerHTML += i + "<br>";
+        }
+    }
+</script>
 </html>
