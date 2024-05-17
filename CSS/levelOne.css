@@ -1,0 +1,21 @@
+/*  CSS - cascading style sheet
+    it is a language that is used to describe the style of a document 
+    Basic Syntax : 
+        h1 is selector , color is property and red is value.
+        h1 {
+            color: red;
+        }
+*/
+h1 {
+    color: red;
+}
+/*  Including Style : 
+    1.Inline      :      <h1 style="color: red;"> Hello World </h1>
+    2.<style> tag :     <style>
+                            h1 {
+                                color: red;
+                            }
+                        </style>
+    3.External stylesheet :     css file
+        writing css in a separate document & linking it with HTML file.
+*/

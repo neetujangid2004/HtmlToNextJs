@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete HTML</title>
+</head>
+<body>
+    <!--    ******** Complete HTML language *******
+        HTML : Hyper Text Markup Language 
+        - structure/layout
+        - HTML is the code that is used to structure a web page and its content.
+        - The component used to design the structure of websites are called HTMl tags.
+
+        First File in html :
+        - index.html
+        - it is the default name for a website's homepage.
+
+        HTMl Tag :
+        - a container for some content or other HTMl tags.
+        - <p> This is a paragraph </p>
+        - (<p> This is a paragraph </p>) is called element and (this is a paragraph) is called content
+        - <p> is opening tag and </p> is closing tag
+
+        Basic HTML page : 
+        <!DOCTYPE html>                      tells browser you are using HTML5
+        <html>                               root of an html document / root element
+            <head>                           container for metadata
+                <title>My first page</title> page title
+            </head>                          
+            <body>                           contains all data rendered by the browser
+                <p>Hello World</p>           paragraph tag
+            </body>
+        </html
+    -->
+    <!-- 
+        Quick Point :
+        - HTMl tag is parent of head & body tag
+        - Most of html elements have opening & closing tags with content in between.
+        - Some tags have no content in between, eg - <br>
+        - We can use inspect element / view page source to edit html.
+        - html is not case sensitive
+
+        Comments in HTML :
+        this is part of code that should not be parsed.
+        <!- This is an HTMl comment ->
+
+        HTML Attributes :
+        attributes are used to add more information to the tag
+        <html lang="en">
+
+        Heading Tag : 
+        used to display headings in html
+        h1 (most important),h2,h3,h4,h5,h6 (least important)
+
+        Paragraph Tag : 
+        used to add paragraph in html
+        <p> This is a sample paragraph </p>
+
+        Anchor tag :
+        used to add links to your page .
+        absulate link : (other)
+        <a href="https://google.com">Google</a>
+        relative link :
+        <a href="index.html">My first file in html</a>
+
+        Image tag :
+        used to add images to your page
+        <img src="image.png" alt="Random Image">
+
+        Br tag :
+        used to add next line (line breaks) to your page
+        <br>
+
+        Bold, Italic & Underline tags :
+        used to highlight text in your page.
+        <b> Bold </b>
+        <i> Italic </i>
+        <u> Underline </u>
+
+        Big & Small tags :
+        used to display big & small text on your page
+        <big> Big </big>
+        <small> Small </small> 
+
+        Hr tag :
+        used to display a horizontal ruler,used to separate content.
+        <hr />
+
+        Subscript & Superscript tag :
+        used to display a horizontal ruler, used to separate content
+        <sub> subscript </sub>
+        <sup> superscript </sup>
+
+        Pre tag :
+        used to display text as it is (without ignoring spaces & next line)
+        <pre> this
+            is a sample
+            text.
+        </pre>
+    -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <hr>
+    <p>Sample paragraph Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius iusto ad sint veniam molestiae dignissimos quae numquam vel? Et tenetur velit soluta nihil harum incidunt exercitationem in quo sequi quaerat!</p>
+    <hr>
+    <a href="https://google.com">Google</a>
+    <br />
+    <a href="index.html">My first file in html</a>
+    <hr>
+    <img src="image.png" alt="Random Image" />
+    <img src="and.jpg" alt="Android Image" height="100"/>
+    <hr>
+    <b> Bold </b><br>
+    <i> Italic </i><br>
+    <u> Underline </u>
+    <p><u><b>Sample paragraph </b></u>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius iusto ad sint veniam molestiae dignissimos quae numquam vel? Et tenetur velit soluta nihil harum incidunt exercitationem in quo sequi quaerat!</p>
+    <hr>
+    <big> Big : this tag show big text</big><br>
+    <small> Small : this tag show big text</small>
+    <hr />
+    <h1>H<sub>2</sub>O</h1>
+    <h1>(a + b)<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> + 2ab</h1>
+    <hr>
+    <pre> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Debitis veniam voluptatum quam accusamus illum dicta. 
+                Corrupti sit cum quisquam, magni obcaecati quos 
+                    sapiente ullam veniam, eius, ipsam nemo modi quo.
+    </pre>
+    <hr>
+    <div>
+        <h1>Portfolio Page</h1>
+        <a href="#first">Education</a>
+        <a href="#second">Experience</a>
+        <a href="#third">Projects</a>
+    </div>
+    <hr>
+    <div id="first">
+        <h1>Education</h1>
+    </div>
+    <hr>
+    <div id="second">
+        <h1>Experience</h1>
+    </div>
+    <hr>
+    <div id="third">
+        <h1>Projects</h1>
+    </div>
+    <hr>
+</body>
+</html>
