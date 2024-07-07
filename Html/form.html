@@ -9,45 +9,71 @@
             background-color: #414141;
             color: #fff;
         }
+        form {
+            background-color: #e79e9e;
+        }
     </style>
 </head>
 <body>
-    <h1>My First Form in Html</h1>
-    <form action="url" method="get" accept-charset="UTF-16" autocomplete="off" enctype="text/plain">
-        <label for="fname">First Name</label> <br>
-        <input type="text" placeholder="first name" name="" id="fname">
-        <br> <br>
+    <h1>Forms in HTML</h1>
+    <form action="url" method="get" accept-charset="UTF-16" autocomplete="on" enctype="application/x-www-form-urlencoded" target="_blank">
+        <label for="fname">First Name</label><br/>
+        <input type="text" name="" id="fname" placeholder="first name"><br/>
 
-        <label for="lname">Last Name</label> <br>
-        <input type="text" placeholder="last name" name="" value="khati" id="lname">
-        <br><br>
+        <label for="lname">Last Name</label><br/>
+        <input type="text" name="" id="lname" placeholder="last name"><br/>
 
-        <label for="week">Week</label> <br>
-        <input type="week" name="" placeholder="week" id="week">
-        <br><br>
+        <button type="submit">Submit</button><br/>
+        <input type="submit" value="submit">
+    </form><br/>
+    <form action="url" method="" accept-charset="UTF-16" autocomplete="on" enctype="application/x-www-form-urlencoded" target="_blank">
+        <label for="aname">First Name</label><br/>
+        <input type="text" name="" id="aname" placeholder="first name" value="Neetu"><br/>
 
-        <select name="editors" id="" multiple>
-            <option value="Vs code">Vs Code</option>
-            <option value="Sublime">Sublime</option>
-            <option value="Neetu">Neetu</option>
-            <option value="Jangid">Jangid</option>
-            <option value="Khati">Khati</option>
-        </select>
-        <br><br>
+        <input type="password" name="" id="" placeholder="password"><br/>
+        <input type="month" name="" id="" placeholder="month"><br/>
+        <input type="button" value="Bottun"><br/>
+        <input type="search" name="" id="" placeholder="search"><br/>
+        <input type="week" name="" id=""><br/>
+        <input type="email" name="" id="" placeholder="email"><br/>
 
-        <input list="editors" name="editor">
+        <select name="editors" id="">
+            <option value="n">Neetu</option>
+            <option value="p">Prakash</option>
+            <option value="j">Jangid</option>
+        </select><br/>
+
+        <input list="editors" name="editors" placeholder="list input">
         <datalist id="editors">
             <option value="Neetu">Neetu</option>
+            <option value="Prakash">Prakash</option>
             <option value="Jangid">Jangid</option>
-            <option value="Khati">Khati</option>
-        </datalist>
-        <br><br>
+        </datalist><br/>
 
-        <input type="hidden" name="">
+        <input type="range" name="Javascript" id="Javascript">
+        <label for="Javascript">Javascript</label><br/>
 
-        <input type="reset" value="Reset">
-        <br>
-        <button type="submit">Submit</button>
+        <input type="radio" name="" id="">False and true<br/>
+        <input type="hidden" name=""><br/>
+
+        <input type="reset" value="Reset"><br/>
+        <button type="submit">Submit</button><br/>
+    </form><br/><br>
+    <form action="">
+        <input type="text" placeholder="Enter Name"><br>
+        <input type="number" placeholder="Enter a number "><br>
+        <input type="email" value="Email"><br>
+        <input type="button" value="Button"><br>
+        <input type="checkbox" value="checkbox">Yes or No<br>
+        <input type="date"><br>
+        <input type="file"><br>
+        <input type="password" placeholder="Enter password"><br>
+        <input type="radio"><br>
+        <input type="range"><br>
+        <input type="color"><br>
+        <input type="search" placeholder="Search"><br>
+        <input type="submit" placeholder="Submit"><br>
+        <input type="reset" placeholder="Reset"><br>
     </form>
 </body>
 </html>

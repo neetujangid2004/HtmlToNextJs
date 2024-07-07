@@ -3,54 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS first file</title>
-    <style>
-        h2 {
-            color: peru;
-        }
-        .tag {
-            background-color: rgb(96, 98, 221);
-        }
-    </style>
-    <link rel="stylesheet" href="style.css">
+    <title>Notes of CSS</title>
 </head>
-<body>
-    <h1 style="color: red;">.... Hello World!</h1>
-    <h1 style="color: palevioletred;">I am Neetu Jangid</h1>
-    <h2>Hello Prakash Jangid</h2>
-    <h1>Hello all of you .</h1>
-
-    <h1>This is a Heading</h1>
-    <p>This is a paragraph</p>
-    <button>Click Me</button>
-
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit ea doloribus fuga quas ab! Eum quod sint beatae voluptatibus cctio quo veniam. Eum odio, natus alias repudiandae ipsam perspiciatis cupiditate sequi tempora fugiat libero amet quibusdam unde autem quia? Ipsum quas cum tempore sed, placeat, consequuntur rerum, distinctio fugiat accusamus blanditiis ea neque?</p>
-
-    <p id="idOne">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, labore eligendi! Consequuntur nihil officiis error commodi ipsam voluptas odit? Asperiores error provident repellendus. Sequi quaerat velit quas, dolores doloremque culpa possimus obcaecati iusto accusamus repellat maiores. Esse voluptatum quaerat commodi.</p>
-
-    <p class="classOne">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum sed iure odio iste placeat sapiente atque nostrum tempore, consequatur nesciunt assumenda deserunt ab fuga asperiores facilis voluptas esse illum doloremque ipsum adipisci? Perferendis esse, sapiente nam tempore at nostrum numquam.</p>
-
-    <p class="classOne">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio facere dolores ad omnis quas quibusdam nihil ea? Adipisci perferendis odit suscipit blanditiis veritatis, excepturi animi fugit quaerat exercitationem dolores similique iste! Necessitatibus molestias rerum totam consectetur, sunt delectus? Sint, repudiandae.</p>
-
-    <div id="box" style="margin: 5px; padding: 15px;">
-        <p>Q.1  Create a simple div with an id “box”. <br>
-            Add some text content inside the div. <br>
-            Set itsbackground color to lightblue.
-        </p>
-        <p>Q.2  Create 3 headings with h1, h2 & h3 . <br>
-            Give them all a class “heading” & set color of “heading” to red.
-        </p>
-        <h1 class="heading">Heading 1</h1>
-        <h2 class="heading">Heading 2</h2>
-        <h3 class="heading">Heading 3</h3>
-        <p>Q.3 Create a button & set its background color to : <br>
-            Green using css stylesheet  <br>
-            Blue using style tag    <br>
-            Pink using inline style <br>
-        </p>
-        <button class="stylesheet">stylesheet</button>
-        <button class="tag">Style tag</button>
-        <button style="background-color: pink;">Inline style</button>
+<body style="background-color: rgb(233, 198, 203);">
+    <div style="text-align: center;">
+        <h1><u>CSS : Cascading Style Sheet</u><br>It is a language that is used to describe the style of a document.</h1>
     </div>
+    <hr>
+    <div>
+        <h3><u>Basic Syntax : </u></h3>
+        <ul>h1 is selector, color is property and red is value of property
+            <li>h1 {<br> color: red;<br>} </li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <h3><u>Including Style :</u></h3>
+        <ul>
+            <li><b>Inline</b> : <br> &lt;h1&gt; style="color: red;" Neetu Jangid &lt;/h1&gt;</li>
+            <li><b>Style tag </b><br>&lt;style&gt; <br>h1 { <br> color: red; <br>} <br>&lt;/style&gt;</li>
+            <li><b>External stylesheet </b><br>Writing css in a separate document and linking it with HTML file <br>&lt;link rel="stylesheet" href="style.css"&gt;</li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <h3><u>Color Property :</u></h3>
+        <ul>
+            <li>used to set the color of foreground (text, button, link) <br> color: red; <br>color: pink; <br>color: blue;</li>
+        </ul>
+        <h3><u>Background Color Property : </u></h3>
+        <ul>
+            <li>used to set the color of background <br>background-color: red; <br>background-color: pink;</li>
+        </ul>
+    </div>
+    <hr> 
+    <div>
+        <h3><u>Color Systems :</u></h3>
+        <ul>
+            <li><b>RGB</b><br>color: rgb(255, 0, 0); <br>color: rgb(0, 255, 0);</li>
+            <ul>
+                <li>red + green = yellow<br>blue + green = skyblue<br>red + blue = darkpink<br>red + blue + green = white</li>
+            </ul>
+            <li><b>Hex (Hexadecimal)</b><br>color: #ff0000; <br>color: #00ff00;</li>
+        </ul>
+        <h3><u>Alpha Channel :</u></h3>
+        <ul>opacity (0 to 1) <br>0 -> not visible <br>1 -> complete
+            <li><b>RGBA</b><br>color: rgba(255, 0, 0, 0.5); <br>color: rgba(255, 0, 0, 1);</li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <h3><u>Selectors :</u></h3>
+        <ul>
+            <li><b>Universal Selector : </b>*{ } asterisk</li>
+            <li><b>Element selector : </b>h1{ } </li>
+            <li><b>Id selector : </b>#myId{ } </li>
+            <li><b>Class selector : </b>.myClass{ }</li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <h3><u>Text Property :</u></h3>
+        <ul>
+            <li><b>text-align: left/right/center;</b><br>left = start <br>right = end</li>
+            <li><b>text-decoration: underline/overline/line-through/none;</b><br>text-decoration: red underline;<br>text-decoration: solid/dotted/double/dashed/wavy;</li>
+            <li><b>font-weight: normal/bold/bolder/lighter;</b><br>font-weight: 100-900;</li>
+            <li><b>font-family: arial;</b><br>font-family: arial,roboto; <br>fall back mechanisum</li>
+        </ul>
+        <ul>Specific font families : <br>Generic font families :
+            <li>serif</li>
+            <li>sans-serif</li>
+            <li>cursive</li>
+            <li>fantasy</li>
+            <li>monospace</li>
+        </ul>
+        <ul>
+            <li><b>line-height: 2px;</b><br>line-height: normal;</li>
+            <li><b>text-tranform: uppercase/lowercase/capitalize/none;</b></li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <h3><u>Units in CSS :</u></h3>
+        <ul>
+            <li><b>Absolute</b><br>pixels (px) : <br> 96px = 1 inch = 2.54 cm<br>font-size: 2px;</li>
+            <li><b>Relative</b> (%, em, rem)
+                <ul>
+                    <li><b>Persentage : (%)</b><br>It is often used to define a size as relative to an element's parent object. <br>width: 33%; <br>margin-left: 50%;</li> 
+                    <li><b>Em : </b><br>Font size of the parent, in the case of typographical properties like <u><b>font-size</b></u>, and font size of the element itself , in the case of other properties like <u><b>width.</b></u><br>2 times of parent's font size. <br>parent = 1em</li>
+                    <li><b>Rem : </b>(Root Em) <br>Font size of the root element.</li>
+                    <li><b>vh : </b>relative to 1% viewport height</li>
+                    <li><b>vw : </b>relative to 1% viewport width</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <h3><u>Box Model in CSS :</u></h3>
+        <ul>
+            <li>height</li>
+            <li>width</li>
+            <li>border</li>
+            <li>padding : between the box and text(content)</li>
+            <li>margin : between the two box</li>
+        </ul>
+        <ul><b>Height :</b> By default, it sets the content area height of the element 
+            <li>div { <br> height: 50px; <br>}</li>
+        </ul>
+        <ul><b>Width : </b>By default, it sets the content area width of the element 
+            <li>div { <br> width: 50px; <br>}</li>
+        </ul>
+        <ul><b>Border : </b>used to set an element's border 
+            <li>border-width: 2px; </li>
+            <li>border-style: solid/dotted/dashed; </li>
+            <li>border-color: black;</li>
+            <li>shorthand - - -> border: 2px solid black;</li>
+            <ul>used to round the corners of an element's outer border edge
+                <li>border-radius: 10px; </li>
+                <li>border-radius: 50%;</li>
+            </ul>
+        </ul>
+        <ul><b>Padding :</b>
+            <li>padding-left: 10px;</li>
+            <li>padding-right: 5px;</li>
+            <li>padding-top: 3px;</li>
+            <li>padding-bottom: 5px;</li>
+            <li>shorthand - - -> padding: 1px 2px 3px 4px; <br>top/right/bottom/left - - > clockwise. <br>padding: 50px;</li>
+        </ul>
+        <ul><b>Margin :</b>
+            <li>margin-right: 10px;</li>
+            <li>margin-left: 5px;</li>
+            <li>margin-top: 25px;</li>
+            <li>margin-bottom: 5px;</li>
+            <li>shorthand - - -> margin: 1px 2px 3px 4px; <br>top/right/bottom/left - - > clockwise. <br>margin: 50px;</li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <h3><u>Display Property :</u></h3>
+        <ul><b>display: inline/block/inline-block/none; </b>
+            <li><b>inline : </b>Takes only the space required by the element. (no margin/padding)</li>
+            <li><b>block : </b>Takes full space available in width.</li>
+            <li><b>inline-block : </b>Similar to inline but we can set margin & padding.</li>
+            <li><b>none : </b>To remove element from document flow.</li>
+        </ul>
+        <h3><u>Visibility : </u></h3>
+        <ul><b>visibility: hidden;</b>
+            <li><b>Note : </b>When visibility is set to none, space for the element is reserved But for display set to none, no space is reserved or blocked for the element.</li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <h3><u>Position :</u></h3>
+        <ul>The position css property sets how an element is positioned in a document.
+            <li><b>position: static/relative/absolute/fixed;</b>
+                <ul>
+                    <li><b>static : </b>default position (the top, right, bottom, left, and z-index properties have no effect)</li>
+                    <li><b>relative : </b>element is relative to itself. (the top, right, bottom, left and z-index will work)</li>
+                    <li><b>absolute : </b>positioned relative to its closest positioned ancestor.(removed from the flow)(not-static)</li>
+                    <li><b>fixed : </b>positioned relative to browser. (removed from flow).</li>
+                    <li><b>sticky : </b>positioned based on user's scroll position.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <h3><u>z-index :</u></h3>
+        <ul>It decides the stack level of elements. <br>Overlapping elements with a larger z-index cover those with a smaller one.
+            <li>z-index: auto(0);</li>
+            <li>z-index: 1/2/.....;</li>
+            <li>z-index: -1/-2/....;</li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <h3><u>Background Image :</u></h3>
+        <ul>Used to set an image as background
+            <li><b>background-image: url("image.jpeg");</b></li>
+        </ul>
+        <h3><u>Background Size : </u></h3>
+        <ul>
+            <li><b>background-size: cover/contain/auto;</b>
+                <ul>
+                    <li>cover : no empty space</li>
+                    <li>contain : fit and completely visible image</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <h3><u>Flexbox : </u>Flexible box layout</h3>
+        <ul>It is a one-dimensional layout method for arranging items in rows or columns.
+            <br>The Flex Model 
+            <li>flex container</li>
+            <li>main axis, cross axis</li>
+            <li>flex item</li>
+        </ul>
+        <ul><b>Flexbox Direction :</b>
+            <br>It sets how flex items are placed in the flex container, along which axis and direction.
+            <li>flexbox-direction: row,(default);</li>
+            <li>flexbox-direction: row-reverse;</li>
+            <li>flexbox-direction: column;</li>
+            <li>flexbox-direction: column-reverse;</li>
+        </ul>
+        <ul><b>Flex Properties :</b>
+            <br>for flex container
+            <li>justify-content: alignment along the main axis.
+                <br>flex-start/flex-end/centre/space-evenly/
+            </li>
+            <li>flex-wrap: nowrap/wrap/wrap-reverse;</li>
+            <li>align-items: alignment along the cross axis.</li>
+            <li>align-content: alignment of space between & around the content </li>
+            <li>for flex item
+                <ul>
+                    <li>align-self : alignment of individual along the cross axis.</li>
+                    <li>flex-grow : how much a flex item will grow relative to the rest of the flex items if space is available.</li>
+                    <li>flex-shrink : how much a flex item will shrink relative to the rest of the space is available.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <h3><u>Media Queries :</u></h3>
+        <ul>Help create a responsive website.
+            <li><b>@media( width: 600px )</b>{ <br>div { <br> background-color: red; <br>} }</li>
+            <li><b>@media( min-width: 600px )</b>{ <br>div { <br> background-color: red; <br>} }</li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <h3><u>Transitions : </u></h3>
+        <ul>Transitions enable you to define the Transition between two states of an element.
+            <li><b>transition: font-size 2s ease-in-out 0.2s;</b><br>property name | duration | timing-function | delay</li>
+            <li>transition-property: property you want to transition (font-size,width etc.).</li>
+            <li>transition-duration: 2s/4ms...</li>
+            <li>transition-timing-function: ease-in/ease-out/linear/steps...</li>
+            <li>transition-delay: 2s/4ms..</li>
+        </ul>
+        <h3><u>CSS transform :</u></h3>
+        <ul>used to apply 2D & 3D transformations to an element
+            <li><b>rotate <br>transform: rotate(45deg);</b></li>
+            <li>rotate: 45deg;</li>
+            <li>rotateX: 45deg;</li>
+            <li>rotateY: 45deg;</li>
+            <li>totateZ: 45deh</li>
+        </ul>
+    </div>
+    <hr>
 </body>
 </html>
