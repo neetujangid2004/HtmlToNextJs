@@ -4,82 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notes of Html</title>
-    <style>
-        * {
-            margin: 0%;
-            padding: 0%;
-        }
-        .head {
-            text-align: center;
-            background-color: lightpink;
-        }
-        div {
-            width: 90%;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            font-size: 30px;
-            background-color: aquamarine;
-        }
-        span {
-            font-size: 22px;
-            font-weight: bold;
-            color: rgb(202, 16, 187);
-        }
-        p {
-            font-size: 20px;
-            line-height: 1.5;
-            color: #666;
-        }
-        ol li {
-            margin: 10px;
-        }
-        table,th, td{
-            text-align: center;
-            margin: 5px;
-            padding: 5px;
-        }
-        th {
-            background-color: rgb(252, 203, 210);
-        }
-        pre {
-            background-color: #f1eabc;
-            padding: 10px;
-            border: 1px solid #ddd;
-            overflow: auto;
-        }
-        code {
-            font-family: 'Courier New', Courier, monospace;
-            background-color: #f1eabc;
-            padding: 2px 4px;
-            border-radius: 4px;
-        }
-        button {
-            background-color: #5bdb5f;
-            border: none;
-            color: white;
-            padding: 8px 15px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 18px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 12px;
-            transition: background-color 0.3s;
-        }
-        button:hover {
-            background-color: #20a126;
-        }
-        b {
-            text-decoration: underline;
-            color: rgb(241, 44, 44);
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="head">
@@ -181,6 +106,71 @@
             </tr>
         </table>
         <p>An html element must have &lt;starting tag&gt; contents &lt;closing tag&gt; <br>Example : <br>&lt;body&gt; : starting tag <br>My name is amit : contents <br> &lt;/body&gt; : closing tag</p>
+    </div>
+    <div>
+        <h2>Html Doctype Declarations and Typography tags : </h2>
+        <ol>
+            <li><span>DOCTYPE Declarations : </span><p>Doctype declaration is a comment that tells in which version of Html coding is done. <br>Doctype declaration tells our web server that we are coding in HTML.</p></li>
+            <li><span>Types of Doctype Declaration : </span>
+                <ol>
+                    <li><strong>HTML 4.01</strong><br><p>&lt;!DOCTYPE HTML PUBLIC "//W3C//DTDHTML4.01Transitional//EN""http://www.w3.org/TR/html4/loose.dtd"></p></li>
+                    <li><strong>XHTML</strong><p>&lt;!DOCTYPE HTML PUBLIC "//W3C//DTDHTML4.01//EN""http://www.w3.org/TR/html4/strict.dtd"></p></li>
+                    <li><strong>HTML 5</strong><p>&lt;!DOCTYPE html> And &lt;!doctype html></p></li>
+                </ol>
+            </li>
+            <li><span>Note : </span>
+                <ol>
+                    <li><p>Always you have to do doctype declaration in html 5 version.</p></li>
+                    <li><p>If you do the doctype declaration in html5 version then you can take advantage of all the features of HTML 4 and XHTML.</p></li>
+                </ol>
+            </li>
+            <li><span>Basic Structure in HTML 5 doctype declaration : </span>
+                <pre><code>
+    &lt;! DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt; Write title content here &lt;title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            Write body content here.
+        &lt;/body&gt;
+    &lt;/html&gt;
+                </code></pre>
+            </li>
+        </ol>
+    </div>
+    <div>
+        <h2>Typography tags : </h2>
+        <ol>
+            <li><span>Heading text tags : </span>
+                <pre><code>
+                    &lt;h1&gt; heading one &lt;/h1&gt;
+                    &lt;h2&gt; heading second &lt;/h2&gt;
+                    &lt;h3&gt; heading third &lt;/h3&gt;
+                    &lt;h4&gt; heading fourth &lt;/h4&gt;
+                    &lt;h5&gt; heading fifth &lt;/h5&gt;
+                    &lt;h6&gt; heading sixth &lt;/h6&gt;
+
+                    <a href="typography2.html" target="_blank"><button>Output</button></a>
+                </code></pre>
+            </li>
+            <li><span>Paragraph text tag : </span>
+                <pre><code>
+                    &lt;p&gt; Welcome to my html website. &lt;/p&gt;
+                    
+                    <a href="typography2.html" target="_blank"><button>Output</button></a>
+                </code></pre>
+            </li>
+            <li><span>Moving text tags : </span>
+                <pre><code>
+                    &lt;marquee&gt; Moving Content Write Here &lt;/marquee&gt;
+                    
+                    <a href="typography2.html" target="_blank"><button>Output</button></a>
+                </code></pre>
+            </li>
+        </ol>
     </div>
 </body>
 </html>
