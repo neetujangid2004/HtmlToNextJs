@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes of Html</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+        .head {
+            text-align: center;
+            background-color: lightpink;
+        }
+        div {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-size: 30px;
+            background-color: aquamarine;
+        }
+        span {
+            font-size: 22px;
+            font-weight: bold;
+            color: rgb(202, 16, 187);
+        }
+        p {
+            font-size: 20px;
+            line-height: 1.5;
+            color: #666;
+        }
+        ol li {
+            margin: 10px;
+        }
+        table,th, td{
+            text-align: center;
+            margin: 5px;
+            padding: 5px;
+        }
+        th {
+            background-color: rgb(252, 203, 210);
+        }
+        pre {
+            background-color: #f1eabc;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow: auto;
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f1eabc;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #5bdb5f;
+            border: none;
+            color: white;
+            padding: 8px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #20a126;
+        }
+        b {
+            text-decoration: underline;
+            color: rgb(241, 44, 44);
+        }
+        #textLink {
+            text-decoration: 0.5px underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1>HYPER TEXT MARKUP LANGUAGE</h1>
+    </div>
+
+    <div>
+        <h2>Html Basics : </h2>
+        <ol>
+            <li><span>Language : </span><p>Languages are used to communicate from one person to another person.</p></li>
+            <li><span>Levels of computer languages : </span>
+                <ol>
+                    <li><strong>Low level or machine language : </strong><p>Low level language written in binary number that means 0 and 1 used to develop an operating system for perticular machine.</p></li>
+                    <li><strong>Middle level or assembly language : </strong><p>Middle level language written in english and it contains assembler to translate english code in binary that means machine language used to develop an operating system for particular machine.</p></li>
+                    <li><strong>High level language : </strong><p>High level language written in english and it contains compiler and interpriter to translate english code in binary that means machine language used to develop an application softwares.</p></li>
+                </ol>
+            </li>
+            <li><span>About Html : </span><p>Html stands for Hyper Text Markup Language, and it is the most widely used language to write Web pages. <br>As its name suggests, Html is a Markup language which means you use Html. to simply "mark-up" a text document with tags that tell a Web browser how to structure it to display.</p></li>
+        </ol>
+    </div>
+
+    <div>
+        <h2>Html Tags : </h2>
+        <ol>
+            <li><span>What is tag ? </span><p>A text surrounded by angle brackets is known as tags. <br>Example : &lt;stpce&gt; <br>A letter which is surrounded by angle bracket is called tag like -: If stpce is written  like this then you will call it text but if &lt;stpce&gt; is written like this then you will say it is tag because here stpce is surrounded by angle brachet.</p></li> 
+            <li>More concepts about tags
+                <table border="1">
+                    <tr>
+                        <th>Text</th>
+                        <th>Tag</th>
+                    </tr>
+                    <tr>
+                        <td>html</td>
+                        <td>body</td>
+                    </tr>
+                    <tr>
+                        <td>< html ></td>
+                        <td>< body ></td>
+                    </tr>
+                </table>
+            </li>
+            <li><span>Use of Tags : </span><p>Tags are used to display our contents on webpage and it also defines the place of our contents.</p></li>
+            <li><span>Important topics about tags : </span>
+                <ol>
+                    <li><p>A tag starts with < > bricket and closed with < / > <br>Example : &lt;html&gt; &lt;/html&gt;</p></li>
+                    <li><p>A start tag also called opening tag and closed tag also called closing tag.</p></li>
+                    <li><p>A tag must be closed with < / > brickets</p></li>
+                    <li><p>A tag marked our content to display them on webpage. <br>Example : &lt;html&gt; our content &lt;/html&gt;</p></li>
+                </ol>
+            </li>
+            <li><span>Example : </span>
+            <pre><code>
+    &lt;! DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt; First code in html &lt;title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            Welcome to my html file (Notes).
+        &lt;/body&gt;
+    &lt;/html&gt;
+
+    <a href="./code/html1.html" target="_blank"><button>Output</button></a>
+            </code></pre>
+            </li>
+        </ol>
+    </div>
+
+    <div>
+        <h2>Html Versions & Element : </h2><br>
+        <p>HTML (Hyper text mark-up language) is developed by <b>Team Bemers-Lee.</b></p>
+        <table border="1">
+            <tr>
+                <th>Versions</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>1991</td>
+            </tr>
+            <tr>
+                <td>HTML 2.0</td>
+                <td>1995</td>
+            </tr>
+            <tr>
+                <td>HTML 3.2</td>
+                <td>1997</td>
+            </tr>
+            <tr>
+                <td>HTML 4.01</td>
+                <td>1999</td>
+            </tr>
+            <tr>
+                <td>XHTML</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td>HTML5</td>
+                <td>2014</td>
+            </tr>
+        </table>
+        <p>An html element must have &lt;starting tag&gt; contents &lt;closing tag&gt; <br>Example : <br>&lt;body&gt; : starting tag <br>My name is amit : contents <br> &lt;/body&gt; : closing tag</p>
+    </div>
+
+    <div>
+        <h2>Html Doctype Declarations and Typography tags : </h2>
+        <ol>
+            <li><span>DOCTYPE Declarations : </span><p>Doctype declaration is a comment that tells in which version of Html coding is done. <br>Doctype declaration tells our web server that we are coding in HTML.</p></li>
+            <li><span>Types of Doctype Declaration : </span>
+                <ol>
+                    <li><strong>HTML 4.01</strong><br><p>&lt;!DOCTYPE HTML PUBLIC "//W3C//DTDHTML4.01Transitional//EN""http://www.w3.org/TR/html4/loose.dtd"></p></li>
+                    <li><strong>XHTML</strong><p>&lt;!DOCTYPE HTML PUBLIC "//W3C//DTDHTML4.01//EN""http://www.w3.org/TR/html4/strict.dtd"></p></li>
+                    <li><strong>HTML 5</strong><p>&lt;!DOCTYPE html> And &lt;!doctype html></p></li>
+                </ol>
+            </li>
+            <li><span>Note : </span>
+                <ol>
+                    <li><p>Always you have to do doctype declaration in html 5 version.</p></li>
+                    <li><p>If you do the doctype declaration in html5 version then you can take advantage of all the features of HTML 4 and XHTML.</p></li>
+                </ol>
+            </li>
+            <li><span>Basic Structure in HTML 5 doctype declaration : </span>
+                <pre><code>
+    &lt;! DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt; Write title content here &lt;title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            Write body content here.
+        &lt;/body&gt;
+    &lt;/html&gt;
+                </code></pre>
+            </li>
+        </ol>
+    </div>
+
+    <div>
+        <h2>Typography tags : </h2>
+        <ol>
+            <a href="#heading" id="textLink"><li><p>Heading tag</p></li></a>
+            <a href="#paragraph" id="textLink"><li><p>Paragraph tag</p></li></a>
+            <a href="#centered" id="textLink"><li><p>Centered tag</p></li></a>
+            <a href="#moving" id="textLink"><li><p>Moving tag</p></li></a>
+        </ol>
+        <ol>
+            <li id="heading"><span>Heading text tags : </span>
+                <pre><code>
+                    &lt;h1&gt; heading one &lt;/h1&gt;
+                    &lt;h2&gt; heading second &lt;/h2&gt;
+                    &lt;h3&gt; heading third &lt;/h3&gt;
+                    &lt;h4&gt; heading fourth &lt;/h4&gt;
+                    &lt;h5&gt; heading fifth &lt;/h5&gt;
+                    &lt;h6&gt; heading sixth &lt;/h6&gt;
+
+                    <a href="./code/typography2.html" target="_blank"><button>Output</button></a>
+                </code></pre>
+            </li>
+            <li id="paragraph"><span>Paragraph text tag : </span>
+                <pre><code>
+                    &lt;p&gt; Welcome to my html website. &lt;/p&gt;
+                    
+                    <a href="typography2.html" target="_blank"><button>Output</button></a>
+                </code></pre>
+            </li>
+            <li id="centered"><span>Centered text tag : </span>
+                <pre><code>
+                    &lt;p&gt; Center content write  &lt;/p&gt;
+                    
+                    <a href="typography2.html" target="_blank"><button>Output</button></a>
+                </code></pre>
+            </li>
+            <li id="moving"><span>Moving text tag : </span>
+                <pre><code>
+                    &lt;marquee&gt; Moving Content Write Here &lt;/marquee&gt;
+                    
+                    <a href="typography2.html" target="_blank"><button>Output</button></a>
+                </code></pre>
+            </li>
+        </ol>
+    </div>
+
+    <div>
+        <h2>HTML Document Formatting and Performatting : </h2>
+        <ol>
+            <a href="#hr" id="textLink"><li><p>Hr tag</p></li></a>
+            <a href="#pre" id="textLink"><li><p>Pre tag</p></li></a>
+            <a href="#centered" id="textLink"><li><p>Centered tag</p></li></a>
+            <a href="#moving" id="textLink"><li><p>Moving tag</p></li></a>
+        </ol>
+        <ol>
+            <li id="hr"><span>Hr tag : </span><p>Empty element tag</p>
+                <pre><code>
+                    &lt;hr&gt;
+                    
+                    <a href="preformatting3.html" target="_blank"><button>Output</button></a>
+                </code></pre>
+            </li>
+            <li id="pre"><span>Pre tag : </span>
+                <pre><code>
+                    &lt;pre&gt;
+                    
+                    <a href="preformatting3.html" target="_blank"><button>Output</button></a>
+                </code></pre>
+            </li>
+            <li><span>Centered text tag : </span>
+                <pre><code>
+                    &lt;p&gt; Center content write  &lt;/p&gt;
+                    
+                    <a href="typography2.html" target="_blank"><button>Output</button></a>
+                </code></pre>
+            </li>
+            <li><span>Moving text tags : </span>
+                <pre><code>
+                    &lt;marquee&gt; Moving Content Write Here &lt;/marquee&gt;
+                    
+                    <a href="typography2.html" target="_blank"><button>Output</button></a>
+                </code></pre>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>
