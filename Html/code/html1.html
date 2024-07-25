@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> First code in html </title>
+    <link rel="stylesheet" href="codeCSS.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">
+            <h2>Write HTML Code</h2>
+            <textarea id="htmlCode">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> First code in html </title>
+    <link rel="stylesheet" href="codeCSS.css">
+</head>
+&lt;body>
+    <h1>Hello, World!</h1>
+    <p> Welcome to my html file (Notes).</p>
+&lt;/body>
+</html>
+            </textarea>
+            <button onclick="runHtmlCode()">Run Code</button>
+        </div>
+        <div class="box">
+            <h2>Output</h2>
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+
+    <script>
+        function runHtmlCode() {
+            let htmlCode = document.getElementById("htmlCode").value;
+            let outputFrame = document.getElementById("output").contentWindow.document;
+            outputFrame.open();
+            outputFrame.write(htmlCode);
+            outputFrame.close();
+        }
+    </script>
+
+</body>
+</html>

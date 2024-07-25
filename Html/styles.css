@@ -72,3 +72,6 @@ b {
     text-decoration: underline;
     color: rgb(241, 44, 44);
 }
+#section {
+    text-decoration: none;
+}
